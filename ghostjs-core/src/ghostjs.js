@@ -1,8 +1,13 @@
+
 /* eslint-disable no-new-func */
+
+import helper from './helper'
+
 import Element from './element'
 
 // For testing purposes
 import { getChromeFlags } from './utils'
+
 
 var debug = require('debug')('ghost')
 var driver = require('node-phantom-simple')
@@ -16,13 +21,17 @@ class Ghost {
     // Default timeout per wait.
     this.waitTimeout = 30000
 
-    if (argv['browser'] === 'phantom') {
+    //original
+    // if (argv['browser'] === 'phantom') {
+    //   this.testRunner = 'phantomjs-prebuilt'
+    // } else if (argv['browser'] === 'firefox') {
+    //   this.testRunner = 'slimerjs-core'
+    // } else {
+    //   this.testRunner = 'chrome'
+    // }
+
+    //set default to phantom
       this.testRunner = 'phantomjs-prebuilt'
-    } else if (argv['browser'] === 'firefox') {
-      this.testRunner = 'slimerjs-core'
-    } else {
-      this.testRunner = 'chrome'
-    }
 
     this.driverOpts = null
     this.setDriverOpts({})

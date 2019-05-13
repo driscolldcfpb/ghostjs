@@ -2,7 +2,7 @@
   "name": "ghostjs",
   "version": "1.13.2",
   "description": "Modern web integration test runner",
-  "main": "src/ghostjs.js",
+  "main": "dist/ghostjs.js",
   "author": "Kevin Grandon <kevingrandon@yahoo.com>",
   "license": "MIT",
   "repository": "git@github.com:KevinGrandon/ghostjs.git",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "npm run lint",
-    "lint": "standard"
+    "lint": "standard",
+    "build": "babel src -d dist"
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
