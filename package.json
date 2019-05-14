@@ -1,11 +1,11 @@
 {
   "name": "ghostjs",
-  "version": "0.0.1",
-  "description": "This is a wrapper so people can use git:// dependencies in package.json to install ghostjs. For the core package.json, see ghostjs-core/package.json.",
+  "version": "0.0.2",
+  "description": "This is a wrapper so people can use git:// dependencies in package.json to install ghostjs. Forked from https://github.com/KevinGrandon/ghostjs. For the core package.json, see ghostjs-core/package.json.",
   "main": "ghostjs-core/dist/ghostjs.js",
-  "author": "Kevin Grandon <kevingrandon@yahoo.com>",
+  "author": "David Driscoll",
   "license": "MIT",
-  "repository": "git@github.com:KevinGrandon/ghostjs.git",
+  "repository": "git@github.com:driscolldcfpb/ghostjs.git",
   "scripts": {
     "postinstall": "(cd ghostjs-core && npm install && npm run build)"
   }

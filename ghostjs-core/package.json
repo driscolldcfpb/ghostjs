@@ -1,11 +1,11 @@
 {
   "name": "ghostjs",
-  "version": "1.13.2",
-  "description": "Modern web integration test runner",
+  "version": "1.13.3",
+  "description": "Modern web integration test runner forked from https://github.com/KevinGrandon/ghostjs",
   "main": "dist/ghostjs.js",
-  "author": "Kevin Grandon <kevingrandon@yahoo.com>",
+  "author": "David Driscoll <david.driscoll@cfpb.com>",
   "license": "MIT",
-  "repository": "git@github.com:KevinGrandon/ghostjs.git",
+  "repository": "git@github.com:driscolldcfpb/ghostjs.git",
   "bin": {
     "ghostjs": "./bin/ghostjs"
   },
