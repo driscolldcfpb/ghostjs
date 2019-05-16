@@ -316,6 +316,22 @@ class Ghost {
     })
   }
 
+
+  //new screenshot with clip option
+  async screenshotclip (filename, folder = 'screenshots', options) {
+    filename = filename || 'screenshot-' + Date.now()
+    const saveToPath = `${folder}/${filename}.png`
+    if(options!==undefined&&options.clip!==undefined){
+      this.pageContext.set('clipRect',options.clip);
+    }
+
+    this.pageContext.render(saveToPath);
+
+    return new Promise(resolve => {
+      resolve(`${process.cwd()}/${saveToPath}`)
+    })
+  }
+
   /**
    * Returns the title of the current page.
    */

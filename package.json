@@ -1,6 +1,6 @@
 {
   "name": "ghostjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a wrapper so people can use git:// dependencies in package.json to install ghostjs. Forked from https://github.com/KevinGrandon/ghostjs. For the core package.json, see ghostjs-core/package.json.",
   "main": "ghostjs-core/dist/ghostjs.js",
   "author": "David Driscoll",
